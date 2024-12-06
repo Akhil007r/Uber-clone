@@ -1,0 +1,27 @@
+{
+  "name": "admin-dashboard-ecommerce",
+  "version": "1.0.0",
+  "description": "Admin Dashboard and Backend Api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akhil007r/Arasu-enterprises-Admin.git"
+  },
+  "author": "Akhilesh.r",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akhil007r/Arasu-enterprises-Admin/issues"
+  },
+  "homepage": "https://github.com/Akhil007r/Arasu-enterprises-Admin#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1",
+    "nodemon": "^3.1.7"
+  }
+}
