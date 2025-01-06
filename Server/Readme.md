@@ -62,4 +62,42 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -d '{"email": "johndoe@example.com", "password": "password123"}'
 ```
+
+### LOGOUT USER
+ 
+**POST /login**
+-----------------
+
+* Logout User
+
+* Description: Logs out the authenticated user.
+* Request Body: None
+* Response:
+  + 200 OK: Logout successful
+  + 401 Unauthorized: Authentication failed
+
 Note: Replace `http://localhost:4000` with the actual URL of your API. or .ENV Port Value
+
+### GET USER / PROFILE
+
+#### Retrieve User Profile
+
+* **Description:** Retrieves the authenticated user's profile information.
+* **Request Body:** None
+* **Response:**
+	+ **200 OK:** User profile information (JSON)
+		- `id`: User ID
+		- `username`: Username
+		- `email`: Email address
+		- `name`: Full name
+	+ **401 Unauthorized:** Authentication failed
+
+#### Example Response:
+```json
+{
+  "id": 1,
+  "username": "johnDoe",
+  "email": "johndoe@example.com",
+  "name": "John Doe"
+}
+
